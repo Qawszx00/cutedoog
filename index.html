@@ -1,36 +1,51 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>狗狗图片展示</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-            margin: 0;
-            background-color: #e0f7fa; /* 改变背景颜色 */
+<html>
+<title>機房</title>
+<!--設定密碼輸入密碼才可看到內容-->
+<script type="text/javascript">
+    function checkPassword() {
+        var password = document.getElementById("password").value;
+        if (password == "cc4b") {
+            document.getElementById("protectedContent").style.display = "block";
+            document.getElementById("passwordPrompt").style.display = "none";
+        } else {
+            alert("密碼錯誤，請走開");
         }
-        img {
-            max-width: 80%; /* 调整图片最大宽度 */
-            height: auto;
-            border-radius: 15px; /* 增加边角圆滑度 */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 增加阴影 */
-            border: 2px solid #fff; /* 增加边框 */
-        }
-        @media (max-width: 768px) {
-            img {
-                max-width: 90%;
+    }
+ 
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('password').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                checkPassword();
             }
-        }
-    </style>
-</head>
-<body>
-    <h1>可爱的狗狗展示</h1>
-    <img src="https://cdn.prod.website-files.com/60d196db74a1e36ff16ebd5d/63c117f19e248b737369b165_puppy-g3237d6104_1920.jpg" alt="可爱的狗狗">
-    <p>这是一些可爱的狗狗图片展示。</p>
+        });
+    });
+ </script>
+ <body>
+ <div id="passwordPrompt">
+    <h1>機房</h1>
+    <p>請輸入密碼</p>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">提交</button>
+ </div>
+ 
+ <div id="protectedContent" style="display:none;"> 
+ </body>
+
+ <h1>機房</h1>
+帳號: cc4b
+密碼:ad870604
+<h2>鈺文電腦</h2>
+@!Nu5540
+<h3><a href="https://www.notion.so/cc-ntcust-edu-tw/PIMS-cf34fba2b3c74a108e23e4d1ef952838"<p>Notion</p></a></h3> 
+   帳號：cc4b@nutc.edu.tw
+   密碼:ad870604
+<h3>公務帳號</h3>
+(已停用)
+帳號：cc4b
+密碼：!t22195535(舊)
+<h3>機房電腦</h3>
+帳號：user
+密碼：!t22195535(舊)
 </body>
 </html>
