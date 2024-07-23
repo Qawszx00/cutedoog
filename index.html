@@ -1,28 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
- <script type="text/javascript">
-        function checkPassword() {
-            var password = document.getElementById("password").value;
-            if (password == "dog") {
-                document.getElementById("protectedContent").style.display = "block";
-                document.getElementById("passwordPrompt").style.display = "none";
-            } else {
-                alert("密碼錯誤，請走開");
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('password').addEventListener('keypress', function(event) {
-                if (event.key === 'Enter') {
-                    checkPassword();
-                }
-            });
-        });
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>狗狗图片展示</title>
+    <title>狗狗动图展示</title>
     <link rel="icon" href="https://media.istockphoto.com/id/1271087162/zh/%E5%90%91%E9%87%8F/%E5%BD%A9%E8%99%B9%E6%8B%B1%E5%90%91%E9%87%8F%E5%9C%96%E7%A4%BA%E8%A3%9D%E9%A3%BE%E5%9C%96%E6%A1%88%E5%A4%A9%E6%B0%A3%E7%AC%A6%E8%99%9F%E8%89%B2%E8%AD%9C%E6%A2%9D%E7%B4%8B%E6%A8%99%E8%AA%8C%E6%A8%99%E8%AA%8C%E9%9A%94%E9%9B%A2%E5%9C%A8%E7%99%BD%E8%89%B2%E5%8C%85%E8%A3%9D%E5%9C%B0%E4%B8%8A.jpg?s=612x612&w=0&k=20&c=sUUJPmkwNwnTjofJFMKTJsT0kETc3WAPDuTXFCB3WQA=" type="image/png">
     <style>
         body {
@@ -32,14 +13,14 @@
             flex-direction: column;
             height: 100vh;
             margin: 0;
-            background-color: #e0f7fa; /* 改变背景颜色 */
+            background-color: #e0f7fa;
         }
         img {
-            max-width: 80%; /* 调整图片最大宽度 */
+            max-width: 80%;
             height: auto;
-            border-radius: 15px; /* 增加边角圆滑度 */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 增加阴影 */
-            border: 2px solid #fff; /* 增加边框 */
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border: 2px solid #fff;
         }
         @media (max-width: 768px) {
             img {
@@ -50,7 +31,7 @@
 </head>
 <body>
     <h1>可爱的狗狗展示</h1>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWXlWnFB4Or41-t0pDXBGygg6skSbXV4wGPw&s"可爱的狗狗">
-    <p>这是一些可爱的狗狗图片展示。</p>
+    <img src="https://media.giphy.com/media/1Bgr0VaRnx3pCZBaJa/giphy.gif" alt="可爱的狗狗">
+    <p>这是一些可爱的狗狗动图展示。</p>
 </body>
 </html>
