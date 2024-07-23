@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>狗狗动图展示</title>
+    <title>狗狗圖片展示</title>
     <link rel="icon" href="https://media.istockphoto.com/id/1271087162/zh/%E5%90%91%E9%87%8F/%E5%BD%A9%E8%99%B9%E6%8B%B1%E5%90%91%E9%87%8F%E5%9C%96%E7%A4%BA%E8%A3%9D%E9%A3%BE%E5%9C%96%E6%A1%88%E5%A4%A9%E6%B0%A3%E7%AC%A6%E8%99%9F%E8%89%B2%E8%AD%9C%E6%A2%9D%E7%B4%8B%E6%A8%99%E8%AA%8C%E6%A8%99%E8%AA%8C%E9%9A%94%E9%9B%A2%E5%9C%A8%E7%99%BD%E8%89%B2%E5%8C%85%E8%A3%9D%E5%9C%B0%E4%B8%8A.jpg?s=612x612&w=0&k=20&c=sUUJPmkwNwnTjofJFMKTJsT0kETc3WAPDuTXFCB3WQA=" type="image/png">
     <style>
         body {
@@ -68,6 +68,16 @@
         .button2:hover {
             background-color: #ec971f;
         }
+        .content-block {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            width: 60%; /* 修改宽度 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center; /* 文本居中 */
+        }
     </style>
     <script type="text/javascript">
         function checkPassword() {
@@ -99,9 +109,11 @@
     <div id="protectedContent">
         <h1>可爱的狗狗展示</h1>
         <img src="https://imgs.699pic.com/images/401/520/077.gif!detail.v1" alt="可爱的狗狗">
-        <p>这是一些可爱的狗狗动图展示。</p>
+        <p>这是一些可爱的狗狗圖片展示。</p>
         <button class="button2" onclick="myFunction()">按我</button>
-        <p id="dem">初始化</p> <!--將id設為dem裡面的名字為A Parageaph-->
+        <div class="content-block">
+            <p id="dem">初始化</p> <!--將id設為dem裡面的名字為A Parageaph-->
+        </div>
     </div>
 
     <script>
