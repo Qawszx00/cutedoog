@@ -122,16 +122,6 @@
                 }
             });
         });
-
-        function myFunction() {
-            var paragraph = document.getElementById("dem");
-            if (paragraph.innerHTML === "不嘻嘻") {
-                paragraph.innerHTML = "嘻嘻";
-            } else {
-                paragraph.innerHTML = "不嘻嘻";
-            }
-        }
-    </script>
 </head>
 <body>
     <div id="passwordPrompt">
@@ -149,5 +139,15 @@
             <p id="dem">初始化</p>
         </div>
     </div>
+    <script>
+        function myFunction() {
+            var paragraph = document.getElementById("dem");
+            if (paragraph.innerHTML === "不嘻嘻") {
+                paragraph.innerHTML = "嘻嘻";
+            } else {
+                paragraph.innerHTML = "不嘻嘻";
+            }
+        }
+    </script>
 </body>
 </html>
