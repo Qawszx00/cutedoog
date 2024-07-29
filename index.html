@@ -74,7 +74,7 @@
             margin-top: 10px;
             border-radius: 10px;
             background-color: #f9f9f9;
-            width: 10%; /* 修改宽度 */
+            width: 30%; /* 修改宽度 */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center; /* 文本居中 */
         }
@@ -97,6 +97,40 @@
                 }
             });
         });
+
+        let currentImage = 0;
+        const images = [
+            "https://imgs.699pic.com/images/401/520/077.gif!detail.v1",
+            "https://memeprod.ap-south-1.linodeobjects.com/user-maker/e94070b47c57e23993a6c34d31cb6508.gif",
+        ];
+
+        function switchImage(direction) {
+            if (direction === 'next') {
+                currentImage = (currentImage + 1) % images.length;
+            } else if (direction === 'prev') {
+                currentImage = (currentImage - 1 + images.length) % images.length;
+            }
+            document.getElementById('imageSwitch').src = images[currentImage];
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'ArrowRight') {
+                    switchImage('next');
+                } else if (event.key === 'ArrowLeft') {
+                    switchImage('prev');
+                }
+            });
+        });
+
+        function myFunction() {
+            var paragraph = document.getElementById("dem");
+            if (paragraph.innerHTML === "不嘻嘻") {
+                paragraph.innerHTML = "嘻嘻";
+            } else {
+                paragraph.innerHTML = "不嘻嘻";
+            }
+        }
     </script>
 </head>
 <body>
@@ -108,24 +142,12 @@
 
     <div id="protectedContent">
         <h1>可爱的狗狗展示</h1>
-        <img src="https://imgs.699pic.com/images/401/520/077.gif!detail.v1" alt="可爱的狗狗">
+        <img id="imageSwitch" src="https://imgs.699pic.com/images/401/520/077.gif!detail.v1" alt="可爱的狗狗">
         <p>这是一些可爱的狗狗圖片展示。</p>
-        <button class="button2" onclick="myFunction()">按我</button>
+        <button class="button2" onclick="myFunction()">快樂按鍵</button>
         <div class="content-block">
-            <p id="dem">初始化</p> <!--將id設為dem裡面的名字為A Parageaph-->
+            <p id="dem">初始化</p>
         </div>
     </div>
-
-    <script>
-        function myFunction() {
-            var paragraph = document.getElementById("dem"); //使用document.getElementById("dem")將取得的元素放至在變數paragraph中
-            if (paragraph.innerHTML === "不嘻嘻") {
-                paragraph.innerHTML = "嘻嘻";
-            } else {
-                paragraph.innerHTML = "不嘻嘻";
-            }
-        }
-    </script>
-
 </body>
 </html>
